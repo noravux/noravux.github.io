@@ -1,9 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: #16222a;
-  background: -webkit-linear-gradient(to top, #16222a, #3a6073);
-  background: linear-gradient(to top, #16222a, #3a6073);
-  background-repeat: no-repeat;
+  background: rgb(11, 12, 16);
+  background: linear-gradient(
+    180deg,
+    rgba(11, 12, 16, 1) 0%,
+    rgba(31, 40, 51, 1) 43%,
+    rgba(47, 41, 69, 1) 100%
+  );
+
   padding: 0;
   margin: 0;
 
@@ -93,6 +102,7 @@ nav {
   margin: 0 auto;
   text-align: center;
 }
+
 .hero img {
   width: 80%;
 }
@@ -102,9 +112,11 @@ nav {
   font-weight: 400;
   color: #fff;
 }
+
 .hero h2 {
   color: #fff;
 }
+
 .hero p {
   font-weight: 300;
   line-height: 1.7em;
@@ -122,12 +134,13 @@ nav {
   font-weight: 400;
   color: #fff;
 }
+
 .skills h2 {
   color: #fff;
 }
 
 .skills img {
-    width: 100%;
+  width: 100%;
 }
 
 .skills p {
@@ -152,6 +165,19 @@ nav {
   color: #98a0ad;
 }
 
+/* Footer */
+
+footer {
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+footer small {
+  font-size: 1.2em;
+  opacity: 0.5;
+}
+
 @media screen and (min-width: 768px) {
   /*Navbar for desktop */
   nav {
@@ -161,12 +187,14 @@ nav {
     height: 70px;
     align-items: center;
   }
+
   .menu {
     display: flex;
     margin-right: 30px;
     flex-direction: row;
     justify-content: flex-end;
   }
+
   .menu li {
     margin: 0;
   }
@@ -187,15 +215,41 @@ nav {
   .menu li:hover {
     color: rgba(255, 255, 255, 1);
   }
-  /*Navbar for desktop ends*/
+  /*Navbar*/
 
-  /*Hero section for desktop*/
+  /*Hero*/
   .hero img {
     width: 30%;
   }
 
-  /*Skills section for desktop*/
+  .hero-content {
+    padding: 0 8em;
+  }
+
+  .hero h1 {
+    font-size: 4em;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: -0.3em;
+  }
+
+  .hero h2 {
+    font-size: 2.5em;
+    opacity: 0.8;
+    color: #fff;
+  }
+
+  /*Skills*/
   .skills img {
     width: 40%;
-}
+  }
+
+  .skills-content {
+    padding: 0 8em;
+  }
+  /* Portfolio*/
+
+  .portfolio-content {
+    padding: 0 8em;
+  }
 }
