@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700&display=swap");
+body {
+  background: #16222a;
+  background: -webkit-linear-gradient(to top, #16222a, #3a6073);
+  background: linear-gradient(to top, #16222a, #3a6073);
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.content {
+  grid-area: content;
+}
+
+header {
+  grid-area: header;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.container {
+  display: grid;
+  font-size: 1.2em;
+  width: 100%;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+}
+
+.content,
+.footer {
+  padding: 1em;
+}
+
+/* Navbar */
+nav {
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+.menu {
+  list-style-type: none;
+  display: none;
+}
+
+.menu li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.6;
+}
+
+.menu li a:hover {
+  opacity: 1;
+}
+
+.fas.fa-code {
+  display: inline-block;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-toggler {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 30px;
+}
+
+.active {
+  display: block;
+}
+/* Navbar ends */
+
+/* Hero section */
+.hero {
+  margin: 0 auto;
+  text-align: center;
+}
+.hero img {
+  width: 80%;
+}
+
+.hero h1 {
+  font-size: 2.2em;
+  font-weight: 400;
+  color: #fff;
+}
+.hero h2 {
+  color: #fff;
+}
+.hero p {
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #98a0ad;
+}
+
+/* Skills section */
+.skills {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.skills h1 {
+  font-size: 2.2em;
+  font-weight: 400;
+  color: #fff;
+}
+.skills h2 {
+  color: #fff;
+}
+
+.skills img {
+    width: 100%;
+}
+
+.skills p {
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #98a0ad;
+}
+
+/* Portfolio section */
+.portfolio {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.portfolio h2 {
+  color: #fff;
+}
+
+.portfolio p {
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #98a0ad;
+}
+
+@media screen and (min-width: 768px) {
+  /*Navbar for desktop */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+  .menu {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .menu li {
+    margin: 0;
+  }
+
+  .menu li {
+    margin-left: 40px;
+  }
+
+  .fas.fa-code {
+    margin-top: 0;
+  }
+
+  .nav-toggler {
+    display: none;
+  }
+
+  .fas.fa-code:hover,
+  .menu li:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+  /*Navbar for desktop ends*/
+
+  /*Hero section for desktop*/
+  .hero img {
+    width: 30%;
+  }
+
+  /*Skills section for desktop*/
+  .skills img {
+    width: 40%;
+}
+}
