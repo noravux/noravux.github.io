@@ -103,7 +103,7 @@ header a {
 
 /* Hero section */
 .hero {
-  margin: 0 auto;
+  margin: 0 0 50px;
   text-align: center;
 }
 
@@ -118,7 +118,11 @@ header a {
 }
 
 .hero h2 {
+  font-size: 2em;
+  opacity: 0.8;
+  font-weight: 700;
   color: #fff;
+  margin-bottom: 20px;
 }
 
 .hero p {
@@ -129,17 +133,13 @@ header a {
 
 /* Skills section */
 .skills {
-  margin: 0 auto;
+  margin: 0 0 50px;
   text-align: center;
 }
 
-.skills h1 {
+.skills h2 {
   font-size: 2.2em;
   font-weight: 400;
-  color: #fff;
-}
-
-.skills h2 {
   color: #fff;
 }
 
@@ -155,11 +155,13 @@ header a {
 
 /* Portfolio section */
 .portfolio {
-  margin: 0 auto;
+  margin: 0 0 50px;
   text-align: center;
 }
 
 .portfolio h2 {
+  font-size: 2.2em;
+  font-weight: 400;
   color: #fff;
 }
 
@@ -167,6 +169,50 @@ header a {
   font-weight: 300;
   line-height: 1.7em;
   color: #98a0ad;
+}
+
+/* Contact section */
+.contact {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.2em;
+  font-weight: 400;
+  color: #fff;
+}
+
+.contact p {
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #98a0ad;
+  font-size: 1.2em;
+}
+
+.contact a {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #98a0ad;
+}
+
+/* About */
+
+.about-me {
+  margin: 0 0 50px;
+  text-align: center;
+}
+
+.about-me p {
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #98a0ad;
+}
+
+.about-me h2 {
+  font-size: 2.2em;
+  font-weight: 400;
+  color: #fff;
 }
 
 /* Footer */
@@ -227,7 +273,8 @@ footer small {
   }
 
   .hero {
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 120px;
   }
 
   .hero-content {
@@ -239,11 +286,13 @@ footer small {
     font-weight: 700;
     color: #fff;
     margin-bottom: -0.1em;
+    margin-top: 10px;
   }
 
   .hero h2 {
-    font-size: 2.5em;
+    font-size: 3em;
     opacity: 0.8;
+    font-weight: 400;
     color: #fff;
   }
 
@@ -263,7 +312,7 @@ footer small {
   .skills-content {
     padding: 0 8em;
   }
-  /* Portfolio*/
+  /* Portfolio */
 
   .portfolio-content {
     padding: 0 8em;
@@ -275,5 +324,26 @@ footer small {
 
   .content p {
     font-size: 1.2em;
+  }
+
+  /* About  */
+
+  .about-me h2 {
+    font-size: 2em;
+  }
+
+  .about-me p {
+    font-size: 1.2em;
+  }
+
+  /* Contact */
+  .contact {
+    text-align: center;
+  }
+
+  .contact a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #98a0ad;
   }
 }
