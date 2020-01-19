@@ -46,10 +46,34 @@ footer {
   grid-template-rows: auto auto auto;
 }
 
+/* Global styles */
 .content,
 .footer {
   padding: 1em;
 }
+
+h2 {
+  font-size: 2.2em;
+  font-weight: 400;
+  color: #fff;
+}
+
+p {
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #98a0ad;
+  font-size: 1.2em;
+}
+
+.portfolio,
+.skills,
+.hero,
+.about-me {
+  margin: 0 0 35px;
+  text-align: center;
+}
+
+/* /Global styles */
 
 /* Navbar */
 nav {
@@ -102,85 +126,34 @@ header a {
 /* Navbar ends */
 
 /* Hero section */
-.hero {
-  margin: 0 0 50px;
-  text-align: center;
-}
 
 .hero img {
   width: 80%;
 }
 
 .hero h1 {
-  font-size: 2.2em;
-  font-weight: 400;
+  font-size: 3.5em;
+  font-weight: 700;
   color: #fff;
 }
 
 .hero h2 {
   font-size: 2em;
   opacity: 0.8;
-  font-weight: 700;
+  font-weight: 400;
   color: #fff;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-weight: 300;
-  line-height: 1.7em;
-  color: #98a0ad;
 }
 
 /* Skills section */
-.skills {
-  margin: 0 0 50px;
-  text-align: center;
-}
-
-.skills h2 {
-  font-size: 2.2em;
-  font-weight: 400;
-  color: #fff;
-}
 
 .skills img {
   width: 100%;
-}
-
-.skills p {
-  font-weight: 300;
-  line-height: 1.7em;
-  color: #98a0ad;
-}
-
-/* Portfolio section */
-.portfolio {
-  margin: 0 0 50px;
-  text-align: center;
-}
-
-.portfolio h2 {
-  font-size: 2.2em;
-  font-weight: 400;
-  color: #fff;
-}
-
-.portfolio p {
-  font-weight: 300;
-  line-height: 1.7em;
-  color: #98a0ad;
 }
 
 /* Contact section */
 .contact {
   margin: 0 auto;
   text-align: center;
-}
-
-.contact h2 {
-  font-size: 2.2em;
-  font-weight: 400;
-  color: #fff;
 }
 
 .contact p {
@@ -194,25 +167,6 @@ header a {
   font-size: 1.2em;
   text-decoration: none;
   color: #98a0ad;
-}
-
-/* About */
-
-.about-me {
-  margin: 0 0 50px;
-  text-align: center;
-}
-
-.about-me p {
-  font-weight: 300;
-  line-height: 1.7em;
-  color: #98a0ad;
-}
-
-.about-me h2 {
-  font-size: 2.2em;
-  font-weight: 400;
-  color: #fff;
 }
 
 /* Footer */
@@ -229,7 +183,26 @@ footer small {
 }
 
 @media screen and (min-width: 768px) {
-  /*Navbar for desktop */
+  /* Global styles */
+
+  h2 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  .portfolio-content,
+  .skills-content,
+  .aboutme-content,
+  .hero-content {
+    padding: 0 8em;
+  }
+
+  /* /Global style */
+
+  /* Navbar for desktop */
   nav {
     display: flex;
     justify-content: space-between;
@@ -265,20 +238,9 @@ footer small {
   .menu li:hover {
     color: rgba(255, 255, 255, 1);
   }
-  /*Navbar*/
-
-  /*Hero*/
+  /* Hero*/
   .hero img {
     width: 30%;
-  }
-
-  .hero {
-    margin-top: 30px;
-    margin-bottom: 120px;
-  }
-
-  .hero-content {
-    padding: 0 8em;
   }
 
   .hero h1 {
@@ -296,51 +258,12 @@ footer small {
     color: #fff;
   }
 
-  /*Skills*/
+  /* Skills*/
   .skills img {
     width: 40%;
   }
 
-  .skills {
-    margin-bottom: 50px;
-  }
-
-  .skills h2 {
-    font-size: 2em;
-  }
-
-  .skills-content {
-    padding: 0 8em;
-  }
-  /* Portfolio */
-
-  .portfolio-content {
-    padding: 0 8em;
-  }
-
-  .portfolio h2 {
-    font-size: 2em;
-  }
-
-  .content p {
-    font-size: 1.2em;
-  }
-
-  /* About  */
-
-  .about-me h2 {
-    font-size: 2em;
-  }
-
-  .about-me p {
-    font-size: 1.2em;
-  }
-
   /* Contact */
-  .contact {
-    text-align: center;
-  }
-
   .contact a {
     font-size: 1.2em;
     text-decoration: none;
